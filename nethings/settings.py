@@ -133,6 +133,11 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = u'/home/jacoposartini/nethings/static'
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+
 ACCOUNT_EMAIL_VERIFICATION = "none"
 #ACCOUNT_EMAIL_REQUIRED = (True)
 OLD_PASSWORD_FIELD_ENABLED = True
