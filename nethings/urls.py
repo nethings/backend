@@ -8,9 +8,13 @@ urlpatterns = [
     path('api-auth/',
         include("rest_framework.urls")),
 
-    # Login tramite REST API
+    # Basic auth api
     path('api/rest-auth/',
         include("rest_auth.urls")),
+
+    # Registration auth api
+    path('api/rest-auth/registration/',
+        include("rest_auth.registration.urls")),
 
     # API iot
     path('api/',
